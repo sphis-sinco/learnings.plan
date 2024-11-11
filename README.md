@@ -15,6 +15,7 @@
 
 4. You can use
    ```hx
-   @:haxe.warning()
+   @:haxe.warning("WDeprecated")
    ```
-    for functions that need a warning, put a string in the ()'s to properly say ofc
+   to disable deprication warnings or in the terminal use the compiler conditional `-w WDeprecated`
+   
