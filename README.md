@@ -1,3 +1,10 @@
 # learnings.plan
 ## November 2024
-- You can add `-watch` as an arg when running/testing a Lime based project (openfl, haxeflixel, etc.), and it will auto-recompile anytime there's a file change in any of your source directories [code from lime/tools/utils/PlatformTarget.hx](https://github.com/openfl/lime/blob/9fb1817f99fea67d094d357e2b8782e6de231aac/src/lime/tools/PlatformTarget.hx#L65-L70).
+- You can add `-watch` as an arg when running/testing a Lime based project (openfl, haxeflixel, etc.), and it will auto-recompile anytime there's a file change in any of your source directories.
+- Snippet for pixel perfect HTML5 rendering for HaxeFlixel.
+    ```hx
+    #if web
+        // pixel perfect render fix!
+        Application.current.window.element.style.setProperty("image-rendering", "pixelated");
+    #end
+    ```
