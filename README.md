@@ -38,3 +38,8 @@
     }
    ```
    
+6. You can use
+   ```hx
+   @type();
+   ```
+   to get the type of something
