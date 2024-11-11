@@ -19,3 +19,22 @@
    ```
    to disable deprication warnings or in the terminal use the compiler conditional `-w WDeprecated`
    
+5. You can use
+   ```hx
+   haxe.PosInfos
+   ```
+   for things related to position in code, for example
+   ```hx
+   class Main {
+      static function assert(cond:Bool, ?pos:haxe.PosInfos) {
+        if (!cond)
+          haxe.Log.trace("Assert in " + pos.className + "::" + pos.methodName, pos);
+      }
+
+      static function main() {
+        assert(1 == 1); // nothing
+        assert(0 == 3); // trace "Assert in Test::main"
+      }
+    }
+   ```
+   
