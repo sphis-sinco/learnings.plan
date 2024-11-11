@@ -7,4 +7,14 @@
         Application.current.window.element.style.setProperty("image-rendering", "pixelated");
     #end
     ```
-3. You can use `@depricated()` for functions no longer in use and put some text in the () to tell yourself
+3. You can use
+   ```hx
+   @:depricated()
+   ```
+    for functions no longer in use and put some text in the ()'s to tell yourself its depricated
+
+4. You can use
+   ```hx
+   @:haxe.warning()
+   ```
+    for functions that need a warning, put a string in the ()'s to properly say ofc
