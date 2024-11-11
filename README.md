@@ -7,3 +7,4 @@
         Application.current.window.element.style.setProperty("image-rendering", "pixelated");
     #end
     ```
+3. You can use `@depricated()` for functions no longer in use and put some text in the () to tell yourself
