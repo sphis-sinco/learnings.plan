@@ -43,3 +43,8 @@
    @type();
    ```
    to get the type of something
+
+7. Dynamic Functions can be overriden by just doing this
+    ```hx
+    updateScore = function(miss:Bool = false) { ... }
+    ```
