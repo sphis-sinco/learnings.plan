@@ -38,13 +38,14 @@
     }
    ```
    
-6. You can use
-   ```hx
-   @type();
-   ```
-   to get the type of something
-
-7. Dynamic Functions can be overriden by just doing this
+6. Dynamic Functions can be overriden by just doing this
     ```hx
     updateScore = function(miss:Bool = false) { ... }
     ```
+
+7. For defines `-D value=any` means it ends up `any=any` and
+```hx
+// looking for it being a bumber
+#if (value > 5)
+```
+will result in an error.
